@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: pia-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    # gunicorn runs 2 Uvicorn workers behind one port, spreading load across CPUs
+    # and giving redundancy if one worker stalls. Keep workers low: each worker
+    # loads its own copy of the sentence-transformers model (torch, ~0.5-1GB), so
+    # bump -w only after moving to a larger-memory Render instance. --timeout 120
+    # keeps slow grounded Gemini calls (15-30s) from being killed by the default
+    # 30s worker timeout.
+    startCommand: gunicorn backend.main:app -k uvicorn.workers.UvicornWorker -w 2 --timeout 120 --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: USE_MONGODB
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB_NAME
+        value: "pia_db"
+      - key: MONGODB_VECTOR_COLLECTION
+        value: "vector_chunks"
+      # Redis cache (optional — leave unset for no-op; set to a Render Key Value
+      # or Upstash URL to enable dossier/top-asked caching + JWT refresh store).
+      - key: REDIS_URL
+        sync: false
+      - key: CACHE_TTL_HOURS
+        value: "24"
+      # Auth — JWT signing secret. MUST be set (a long random string). Without it
+      # the app falls back to an insecure dev secret. Refresh-token revocation
+      # needs REDIS_URL above; without Redis, refresh works but can't be revoked.
+      - key: JWT_SECRET
+        sync: false

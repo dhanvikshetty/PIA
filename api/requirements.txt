@@ -1,0 +1,44 @@
+# ============================================================
+# Vercel serverless function deps — SLIM by design.
+#
+# This bundle serves the GROUNDED + LLM + resume endpoints:
+#   - About Company / Top Asked  -> google-genai (Google Search grounding)
+#   - Ask Puddy / extraction      -> langchain-groq (primary) + langchain-google-genai (fallback)
+#   - Resume analyze              -> pymupdf (PDF text extraction)
+#
+# Deliberately EXCLUDED (would blow Vercel's 250MB function limit and are
+# useless on an ephemeral serverless filesystem):
+#   - chromadb          -> no persisted vector index on /tmp; corpus RAG is local-only
+#   - sentence-transformers / torch  -> embedding + reranker models are local-only
+# backend/db/vector_store.py and backend/rag/reranker.py guard these imports in
+# try/except, so the app boots and degrades gracefully without them.
+# ============================================================
+
+# Core
+fastapi>=0.115.0
+python-dotenv>=1.0.0
+pydantic>=2.11.0
+pydantic-settings>=2.9.0
+python-multipart>=0.0.18
+
+# Google GenAI SDK (grounded company research)
+google-genai>=0.1.0
+
+# LangChain + LLM providers (Groq primary, Gemini fallback)
+langchain>=0.3.20
+langchain-google-genai>=2.1.0
+langchain-groq>=0.2.0
+langchain-community>=0.3.20
+langchain-text-splitters>=0.3.6
+
+# BM25 (pure-python, tiny; retriever.py imports it unconditionally)
+rank-bm25>=0.2.2
+
+# PDF processing (resume analyzer)
+pymupdf>=1.25.0
+
+# MongoDB (optional structured store; falls back to JSON store if unset)
+pymongo[srv]>=4.10.0
+
+# Utilities
+loguru>=0.7.0

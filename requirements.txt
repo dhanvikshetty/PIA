@@ -1,0 +1,52 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+# Production process manager — runs multiple Uvicorn workers behind one port so
+# the single Render instance uses all its CPUs (Render load-balances across
+# scaled instances; gunicorn load-balances across workers within an instance).
+gunicorn>=21.2.0
+python-dotenv>=1.0.0
+pydantic>=2.11.0
+pydantic-settings>=2.9.0
+python-multipart>=0.0.18
+
+# Google GenAI SDK
+google-genai>=0.1.0
+
+# LangChain + LLM
+langchain>=0.3.20
+langchain-google-genai>=2.1.0
+langchain-groq>=0.2.0
+langchain-community>=0.3.20
+langchain-text-splitters>=0.3.6
+
+
+# BM25
+rank-bm25>=0.2.2
+
+# Dense embeddings for Atlas $vectorSearch (all-MiniLM-L6-v2, 384-dim) + the
+# cross-encoder re-ranker. Pulls torch (~1 GB), which OOMs Render's free/512MB
+# tier at model load. Both importers (db/vector_store.py, rag/reranker.py) guard
+# this import, so with it DISABLED the app degrades to BM25-only keyword
+# retrieval instead of crashing.
+#
+# >>> Deliberately OFF for the free-tier deploy (Option A: BM25-only). <<<
+# To enable full semantic hybrid RAG, deploy on a >=2 GB Render tier (keep
+# WEB_CONCURRENCY=1 so torch loads once) and uncomment the next line:
+# sentence-transformers>=2.2.0
+
+# PDF Processing
+pymupdf>=1.25.0
+
+# MongoDB
+pymongo[srv]>=4.10.0
+
+# Redis cache (optional at runtime — degrades to no-op when REDIS_URL is unset)
+redis>=5.0.0
+
+# Auth — JWT (PyJWT) + bcrypt password hashing
+PyJWT>=2.8.0
+bcrypt>=4.1.0
+
+# Utilities
+loguru>=0.7.0

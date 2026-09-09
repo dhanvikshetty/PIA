@@ -1,0 +1,272 @@
+[
+  {
+    "id": "eval_001",
+    "question": "What SQL questions were asked in ProcDNA?",
+    "expected_answer": "ProcDNA asked about the difference between INNER JOIN and LEFT JOIN, GROUP BY vs HAVING clause, subqueries vs CTEs, and normalization concepts.",
+    "expected_source_chunks": ["ProcDNA.pdf"],
+    "company": "ProcDNA",
+    "category": "sql",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_002",
+    "question": "What DSA questions were asked by Walmart?",
+    "expected_answer": "Walmart asked about binary search, two pointer technique for sorted arrays, linked list reversal, and BFS/DFS traversal.",
+    "expected_source_chunks": ["Walmart.pdf"],
+    "company": "Walmart",
+    "category": "dsa",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_003",
+    "question": "What is the package offered by ProcDNA?",
+    "expected_answer": "ProcDNA offers a package of 16 LPA for the Associate Analyst role.",
+    "expected_source_chunks": ["ProcDNA.pdf"],
+    "company": "ProcDNA",
+    "category": "company_info",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_004",
+    "question": "What skills are required for Amazon?",
+    "expected_answer": "Amazon requires skills in Data Structures and Algorithms, System Design, Object-Oriented Programming, and Leadership Principles.",
+    "expected_source_chunks": ["Amazon.pdf"],
+    "company": "Amazon",
+    "category": "skills",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_005",
+    "question": "Describe the interview process at Infosys.",
+    "expected_answer": "Infosys interview process includes Online Assessment (aptitude + coding), Technical Interview, and HR Interview.",
+    "expected_source_chunks": ["Infosys.pdf"],
+    "company": "Infosys",
+    "category": "process",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_006",
+    "question": "What Python questions were asked in ProcDNA?",
+    "expected_answer": "ProcDNA asked about list comprehensions, decorators, generators, difference between deep copy and shallow copy, and exception handling.",
+    "expected_source_chunks": ["ProcDNA.pdf"],
+    "company": "ProcDNA",
+    "category": "python",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_007",
+    "question": "What topics should I study for Walmart?",
+    "expected_answer": "For Walmart, focus on DSA (arrays, trees, graphs), SQL (joins, aggregations), System Design basics, and aptitude.",
+    "expected_source_chunks": ["Walmart.pdf"],
+    "company": "Walmart",
+    "category": "preparation",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_008",
+    "question": "What is the eligibility criteria for Infosys?",
+    "expected_answer": "Infosys requires minimum 60% throughout academics with no active backlogs.",
+    "expected_source_chunks": ["Infosys.pdf"],
+    "company": "Infosys",
+    "category": "eligibility",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_009",
+    "question": "What aptitude questions are commonly asked?",
+    "expected_answer": "Common aptitude topics include time and work, probability, permutations and combinations, percentages, and logical reasoning.",
+    "expected_source_chunks": ["Quant.pdf"],
+    "company": null,
+    "category": "aptitude",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_010",
+    "question": "Explain the difference between INNER JOIN and LEFT JOIN as asked in interviews.",
+    "expected_answer": "INNER JOIN returns only matching rows from both tables. LEFT JOIN returns all rows from the left table and matching rows from the right table, with NULLs where there is no match.",
+    "expected_source_chunks": ["SQL.pdf", "ProcDNA.pdf"],
+    "company": null,
+    "category": "sql",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_011",
+    "question": "How many interview rounds does ProcDNA have?",
+    "expected_answer": "ProcDNA has 3-4 rounds: Online Assessment, Technical Interview Round 1, Technical Interview Round 2, and HR Interview.",
+    "expected_source_chunks": ["ProcDNA.pdf"],
+    "company": "ProcDNA",
+    "category": "process",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_012",
+    "question": "What role does Amazon hire for from campus?",
+    "expected_answer": "Amazon hires for SDE-1 (Software Development Engineer) role from campus placements.",
+    "expected_source_chunks": ["Amazon.pdf"],
+    "company": "Amazon",
+    "category": "company_info",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_013",
+    "question": "What statistics questions were asked in ProcDNA?",
+    "expected_answer": "ProcDNA asked about mean, median, mode, standard deviation, probability distributions, hypothesis testing, and p-values.",
+    "expected_source_chunks": ["ProcDNA.pdf"],
+    "company": "ProcDNA",
+    "category": "statistics",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_014",
+    "question": "What is the salary package at Walmart?",
+    "expected_answer": "Walmart offers a package of approximately 25-30 LPA for the SDE role.",
+    "expected_source_chunks": ["Walmart.pdf"],
+    "company": "Walmart",
+    "category": "company_info",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_015",
+    "question": "What coding questions were in the Amazon online assessment?",
+    "expected_answer": "Amazon OA typically includes 2 coding questions on DSA topics like arrays, strings, trees, and dynamic programming, along with a work simulation.",
+    "expected_source_chunks": ["Amazon.pdf"],
+    "company": "Amazon",
+    "category": "coding",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_016",
+    "question": "Compare the interview difficulty of ProcDNA and Walmart.",
+    "expected_answer": "ProcDNA focuses more on SQL, Python, and statistics with medium difficulty. Walmart focuses on DSA and system design with higher difficulty levels.",
+    "expected_source_chunks": ["ProcDNA.pdf", "Walmart.pdf"],
+    "company": null,
+    "category": "comparison",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_017",
+    "question": "What are the required skills for ProcDNA JD?",
+    "expected_answer": "ProcDNA JD requires SQL, Python, Statistics, Data Visualization, Excel, and basic understanding of Machine Learning.",
+    "expected_source_chunks": ["ProcDNA_JD.pdf"],
+    "company": "ProcDNA",
+    "category": "skills",
+    "doc_type": "job_description"
+  },
+  {
+    "id": "eval_018",
+    "question": "What HR questions were asked at Infosys?",
+    "expected_answer": "Infosys HR questions include: Tell me about yourself, Why Infosys, Strengths and weaknesses, Where do you see yourself in 5 years, and Willingness to relocate.",
+    "expected_source_chunks": ["Infosys.pdf"],
+    "company": "Infosys",
+    "category": "hr",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_019",
+    "question": "What is a GROUP BY clause in SQL?",
+    "expected_answer": "GROUP BY clause groups rows that have the same values in specified columns into summary rows. It is commonly used with aggregate functions like COUNT, SUM, AVG, MAX, MIN.",
+    "expected_source_chunks": ["SQL.pdf"],
+    "company": null,
+    "category": "sql",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_020",
+    "question": "What are the skills mentioned in Walmart JD?",
+    "expected_answer": "Walmart JD mentions Java/Python, Data Structures and Algorithms, SQL, System Design, REST APIs, and Cloud technologies.",
+    "expected_source_chunks": ["Walmart_JD.pdf"],
+    "company": "Walmart",
+    "category": "skills",
+    "doc_type": "job_description"
+  },
+  {
+    "id": "eval_021",
+    "question": "What is binary search and where was it asked?",
+    "expected_answer": "Binary search is an algorithm that finds a target value in a sorted array by repeatedly dividing the search interval in half. It was asked in Walmart and Amazon interviews.",
+    "expected_source_chunks": ["DSA.pdf", "Walmart.pdf"],
+    "company": null,
+    "category": "dsa",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_022",
+    "question": "What database questions were asked at ProcDNA Technical Round 1?",
+    "expected_answer": "ProcDNA Technical Round 1 asked about INNER JOIN vs LEFT JOIN, normalization forms (1NF, 2NF, 3NF), and writing SQL queries for aggregation.",
+    "expected_source_chunks": ["ProcDNA.pdf"],
+    "company": "ProcDNA",
+    "category": "sql",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_023",
+    "question": "What is the time complexity of quicksort?",
+    "expected_answer": "Quicksort has average time complexity O(n log n) and worst case O(n^2). The worst case occurs when the pivot selection is poor.",
+    "expected_source_chunks": ["DSA.pdf"],
+    "company": null,
+    "category": "dsa",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_024",
+    "question": "What is the Infosys package for freshers?",
+    "expected_answer": "Infosys offers different packages: Digital Specialist Engineer (DSE) at 6.5 LPA, Power Programmer at 8 LPA, and Systems Engineer at 3.6 LPA.",
+    "expected_source_chunks": ["Infosys.pdf"],
+    "company": "Infosys",
+    "category": "company_info",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_025",
+    "question": "What probability concepts should I study for aptitude rounds?",
+    "expected_answer": "Key probability concepts include basic probability, conditional probability, Bayes theorem, permutations and combinations, and expected value.",
+    "expected_source_chunks": ["Quant.pdf"],
+    "company": null,
+    "category": "aptitude",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_026",
+    "question": "What was the coding platform used by Amazon for OA?",
+    "expected_answer": "Amazon uses its proprietary platform (Amazon SDE Portal / HackerRank) for Online Assessment rounds.",
+    "expected_source_chunks": ["Amazon.pdf"],
+    "company": "Amazon",
+    "category": "process",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_027",
+    "question": "What system design topics were asked at Walmart?",
+    "expected_answer": "Walmart asked about designing a URL shortener, caching strategies, load balancing, and database sharding concepts.",
+    "expected_source_chunks": ["Walmart.pdf"],
+    "company": "Walmart",
+    "category": "system_design",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_028",
+    "question": "List all companies that asked SQL questions.",
+    "expected_answer": "SQL questions were asked by ProcDNA, Walmart, and Infosys. ProcDNA had the most SQL-focused questions.",
+    "expected_source_chunks": ["ProcDNA.pdf", "Walmart.pdf", "Infosys.pdf"],
+    "company": null,
+    "category": "sql",
+    "doc_type": "interview_experience"
+  },
+  {
+    "id": "eval_029",
+    "question": "What is the difference between stack and queue?",
+    "expected_answer": "Stack follows LIFO (Last In First Out) while Queue follows FIFO (First In First Out). Stack operations are push/pop, Queue operations are enqueue/dequeue.",
+    "expected_source_chunks": ["DSA.pdf"],
+    "company": null,
+    "category": "dsa",
+    "doc_type": "aptitude_material"
+  },
+  {
+    "id": "eval_030",
+    "question": "What are the key responsibilities in the ProcDNA JD?",
+    "expected_answer": "ProcDNA Associate Analyst responsibilities include data analysis, creating SQL reports, building dashboards, statistical modeling, and collaborating with stakeholders.",
+    "expected_source_chunks": ["ProcDNA_JD.pdf"],
+    "company": "ProcDNA",
+    "category": "company_info",
+    "doc_type": "job_description"
+  }
+]

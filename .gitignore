@@ -1,0 +1,25 @@
+# Environment
+.env
+*.pyc
+__pycache__/
+*.pyo
+
+# Data & Models
+/data/
+chroma_data/
+json_data/
+logs/
+*.pdf
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

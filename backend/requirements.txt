@@ -1,0 +1,41 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+python-dotenv>=1.0.0
+pydantic>=2.11.0
+pydantic-settings>=2.9.0
+python-multipart>=0.0.18
+
+# Google GenAI SDK
+google-genai>=0.1.0
+
+# LangChain + LLM
+langchain>=0.3.20
+langchain-google-genai>=2.1.0
+langchain-groq>=0.2.0
+langchain-community>=0.3.20
+langchain-text-splitters>=0.3.6
+
+
+# BM25
+rank-bm25>=0.2.2
+
+# Dense embeddings for Atlas $vectorSearch (all-MiniLM-L6-v2, 384-dim).
+# Pulls torch — guarded import, so its absence degrades to BM25-only.
+sentence-transformers>=2.2.0
+
+# PDF Processing
+pymupdf>=1.25.0
+
+# MongoDB (optional - falls back to JSON store)
+pymongo[srv]>=4.10.0
+
+# Redis cache (optional - degrades to no-op when REDIS_URL is unset)
+redis>=5.0.0
+
+# Auth — JWT + bcrypt password hashing
+PyJWT>=2.8.0
+bcrypt>=4.1.0
+
+# Utilities
+loguru>=0.7.0
